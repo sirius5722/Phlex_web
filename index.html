@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
 <body>
-    <h1>Phlex</h1>
-    <h2>Your guide to physical health</h2>
-    <button id="exerciseButton">Exercise</button>
-    <button id="stopButton" style="display: none;">Stop</button>
-    <video id="video" autoplay muted></video>
-    <canvas id="canvas"></canvas>
-    <script src="app.js"></script>
-    
+  <p>Mediapipe Pose Detection</p>
+  <div class="video-container">
+    <canvas class="output" width="480px" height="480px"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3.1675466124/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.3/pose.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  
 </body>
 </html>
