@@ -1,42 +1,18 @@
-body {
-    background-image: url("Assets//mainBackground.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+body, html {
     margin: 0;
-    
-    font-family: Arial, sans-serif;
-}
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+  }
 
-h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    color: #777;
-    margin-top: 0;
-    margin-bottom: 2rem;
-}
-
-button {
-    font-size: 1.5rem;
-    font-style: bold;
-    padding: 0.5rem 1rem;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 0.25rem;
-    background-color:#c7fb36;
-    color: #000;
-    cursor: pointer;
-}
-
-video, canvas {
-    max-width: 100%;
-}
+  .output {
+    display: block;
+    width: 100%; /* Make the canvas take full width of its container */
+    height: 100%; /* Make the canvas take full height of its container */
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 20px;
+  }
